@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			height: 100vh;
+			flex-direction: column;
+		}
+		.circle{
+			width: 200px;
+			height: 200px;
+			background: black;
+			border-radius: 50%;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.vertical{
+			width: 10px;
+			height: 150px;
+			background: white;
+			position: absolute;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.horizontal{
+			width: 150px;
+			height: 10px;
+			background: white;
+			position: absolute;
+		}
+		.rectangle{
+			transform: translate(60px,-20px);
+			width: 80px;
+			height: 250px;
+			background: black;
+		}
+		.top{
+			transform: rotate(-25deg) translate(115px, -15px);
+			position: absolute;
+			border-left: 40px solid black;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background: transparent;
+		}
+		.down{
+			transform: rotate(20deg)translate(-20px,-60px);
+			border-radius: 50%;
+			border-right: 40px solid black;
+			width:60px;
+			height: 60px;
+			background: transparent;
+		}
+		.one{
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.bottom{
+			width: 200px;
+			height: 40px;
+			background: black;
+		}
+		.two{
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			transform: translate(30px,-10px);
+		}
+		.three{
+			transform: translate(0,-10px);
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			width: 240px;
+			border: 10px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<div class="circle">
+		<div class="vertical">
+			<div class="horizontal"></div>
+		</div>
+	</div>
+	<div class="rectangle"></div>
+	<div class="one">
+		<div class="top"></div>
+		<div class="down"></div>
+	</div>		
+	
+	</div>
+	<div>
+		<div class="bottom two"></div>
+		<div class="bottom three"></div>		
+	</div>
+
+</body>
+</html>

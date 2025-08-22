@@ -1,0 +1,123 @@
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			height: 100vh;
+		}
+		.container{
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			background: black;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.circle{
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			background: transparent;
+			border: 10px solid lightgreen;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+
+		}
+		.two{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			border: 5px solid lightgreen;
+			background: green;
+			box-shadow: 0 0 20px white, 0 0 10px inset black;
+		}
+		h4{
+			font-family: monospace;
+		}
+		h1{
+			font-size: 25px;
+		}
+		.lines{
+			opacity: 0.5;
+			position: absolute;
+			width: 100px;
+			height: 10px;
+			background: white;
+			animation: rotate1 8s infinite;
+			transition: transform 0.3s ease;
+			transform: rotate(90deg)translate(-80px, 0px);
+			animation-delay: 1s;
+		}
+		@keyframes rotate1{
+			100%{
+				transform: rotate(450deg) translate(-80px, 0);
+			}
+		}
+		h1:nth-child(2){
+			position: absolute;
+			color: white;
+			transform: translate(0,-100px) scale(1.5);
+			color: lightgreen;
+		}
+		h1:nth-child(3){
+			position: absolute;
+			color: white;
+			transform:rotate(30deg) translate(0,-100px);
+		}
+		h1:nth-child(4){
+			position: absolute;
+			color: white;
+			transform:rotate(60deg) translate(0,-100px);
+		}
+		h1:nth-child(5){
+			position: absolute;
+			color: white;
+			transform:rotate(0) translate(100px,0) scale(1.5);
+			color: lightgreen;
+		}
+		h1:nth-child(6){
+			position: absolute;
+			color: white;
+			transform:rotate(120deg) translate(0,-100px);
+		}
+		h1:nth-child(7){
+			position: absolute;
+			color: white;
+			transform:rotate(150deg) translate(0,-100px) ;
+		}
+		h1:nth-child(8){
+			position: absolute;
+			color: white;
+			transform:rotate(0) translate(0,100px) scale(1.5);
+			color: lightgreen;
+		}
+		h1:nth-child(9){
+			position: absolute;
+			color: white;
+			transform:rotate(-30deg) translate(0,-100px);
+		}
+		h1:nth-child(10){
+			position: absolute;
+			color: white;
+			transform:rotate(-60deg) translate(0,-100px);
+		}
+		h1:nth-child(11){
+			position: absolute;
+			color: white;
+			transform:rotate(0) translate(-100px, 0) scale(1.5);
+			color: lightgreen;
+		}
+		h1:nth-child(12){
+			position: absolute;
+			color: white;
+			transform:rotate(-120deg) translate(0,-100px);
+		}
+		h1:nth-child(13){
+			position: absolute;
+			color: white;
+			transform:rotate(-150deg) translate(0,-100px);
+		}

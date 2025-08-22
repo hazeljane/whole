@@ -1,0 +1,159 @@
+router-outlet{
+	background: red;
+}
+  * {
+    box-sizing: border-box;
+  }
+  .body {
+    margin: 200px;
+  }
+  .one {
+    transform: translate(130px,-40px);
+    position: absolute;
+    z-index: -1;
+    background: orange;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+  .circle {
+    width: 0;
+    height: 0;
+    border-right:50px solid transparent;
+    border-left:50px solid transparent;
+    border-bottom:100px solid black;
+    position: absolute;
+    box-shadow: 5px 0 5px black, 0 5px 0 brown;
+  }
+  .circle:nth-child(1){
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: translate(-3px, -9px) rotate(130deg);
+  }
+  .circle:nth-child(2){
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: translate(42px,-30px) rotate(183deg);
+  }
+  .circle:nth-child(3){
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: translate(84px, -4px) rotate(236deg);
+  }
+  .circle:nth-child(4){
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: translate(90px, 46px) rotate(289deg);
+  }
+  .circle:nth-child(5){
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: translate(59px, 86px) rotate(343deg);
+  }
+  .circle:nth-child(6){
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: translate(8px, 80px) rotate(390deg);
+  }
+  .circle:nth-child(7){
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: translate(-14px, 37px) rotate(436deg);
+  }
+
+  span {
+    color: orange;
+  }
+  a {
+    font-size: 80px;
+    text-decoration: none;
+    color: orange;
+    font-family: Arial;
+    margin: 30px 100px;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 5px solid transparent;
+  }
+  a:hover{
+  	border-bottom: 5px solid orange;
+  }
+  .header {
+  	background: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    background: white;
+    z-index: 10;
+  }
+  .two {
+    width: 100px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    transform: translate(250px, -200px);
+  }
+
+  /* Responsive font size example */
+  @media (max-width: 768px) {
+    a {
+      font-size: 40px;
+      margin: 15px 50px;
+    }
+
+  }
+  h1 {
+    font-family: Arial;
+    font-size: 200px;
+    color: orange;
+    margin-left: 270px;
+    white-space: nowrap;
+  }
+
+h1 span {
+  display: inline-block;
+  position: relative;
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Wave delay per letter */
+h1 span:nth-child(1) { opacity: 0;animation-delay: 0s; }
+h1 span:nth-child(2) { animation-delay: 0.2s; }
+h1 span:nth-child(3) { animation-delay: 0.4s; }
+h1 span:nth-child(4) { animation-delay: 0.6s; }
+h1 span:nth-child(5) { animation-delay: 0.8s; }
+h1 span:nth-child(6) { animation-delay: 1s; }
+
+/* Wave animation (horizontal) */
+@keyframes wave {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(15px); }
+}
+
+/* On hover: add up/down movement by combining translateY with current left */
+h1:hover span {
+  animation-name: waveUpDown;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Use same delays to keep wave stagger */
+h1:hover span:nth-child(1) { animation-delay: 0s; }
+h1:hover span:nth-child(2) { animation-delay: 0.2s; }
+h1:hover span:nth-child(3) { animation-delay: 0.4s; }
+h1:hover span:nth-child(4) { animation-delay: 0.6s; }
+h1:hover span:nth-child(5) { animation-delay: 0.8s; }
+h1:hover span:nth-child(6) { animation-delay: 1s; }
+
+/* Combined horizontal + vertical wave */
+@keyframes waveUpDown {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(15px) translateY(-20px); }
+}

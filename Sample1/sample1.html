@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Spinning Border</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .animated-border-button {
+      position: relative;
+      padding: 15px 40px;
+      font-size: 18px;
+      color: white;
+      background: #111;
+      border: none;
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    .animated-border-button::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+      background: conic-gradient(
+        #ff0066,
+        #ffcc00,
+        #00ffcc,
+        #0066ff,
+        #ff0066
+      );
+      z-index: -2;
+      border-radius: 60px;
+      animation: none;
+    }
+
+    .animated-border-button::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      right: 2px;
+      bottom: 2px;
+      background: #111;
+      border-radius: 48px;
+      z-index: -1;
+    }
+
+    @keyframes spinBorder {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .spinning::before {
+      animation: spinBorder 2s linear infinite;
+      transform-origin: center center;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="animated-border-button" onclick="toggleSpin(this)">Click Me</button>
+
+  <script>
+    function toggleSpin(button) {
+      button.classList.toggle('spinning');
+    }
+  </script>
+
+</body>
+</html>

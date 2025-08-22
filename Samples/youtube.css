@@ -1,0 +1,310 @@
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@600&family=Fenix&family=Geo:ital@0;1&family=Gidole&family=Hind+Vadodara:wght@300;400;500;600;700&family=Hubballi&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jockey+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:wght@100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Tagesschrift&display=swap');
+        body{
+			display: flex;
+			font-family: Arial;
+			justify-content: center;
+		}
+		main{
+			display: flex;
+		}
+		@media (max-width: 780px){
+			
+			main{
+				flex-direction: column;
+			}
+		}
+		.card img{
+			width: 330px;
+			height: 180px;
+			border-radius: 10px;
+			border: 1px solid black;
+		}
+		.cards img{
+			width: 420px;
+			height: 180px;
+			border-radius: 10px;
+			border: 1px solid black;
+		}
+		.cards{
+			margin: 20px;
+			display: flex;
+
+			width: 700px;
+		}
+		.card{
+			margin: 20px;
+			display: flex;
+
+			width: 700px;
+		}
+		.line-bottom{
+			width: 660px;
+			background: gray;
+			height: 1px;
+			transform: translate(0,210px);
+			position: absolute;
+		}
+
+		.card button{
+			transform: translate(-5px,10px)rotate(90deg);
+			background: transparent;
+			font-weight: 800;
+			border: none;
+			letter-spacing: 4px;
+			font-size: 40px;
+			font-family: Arail;
+		}
+		.cards button{
+			transform: translate(-5px,10px)rotate(90deg);
+			background: transparent;
+			font-weight: 800;
+			border: none;
+			letter-spacing: 4px;
+			font-size: 40px;
+			font-family: Arail;
+		}
+		.red{
+			display: flex;
+			background: red;
+			width: 280px;
+			height: 5px;
+			position: absolute;
+			transform: translate(10px,173px);
+			border-radius: 20px;
+		}
+		.reds{
+			width: 280px;
+			height: 5px;
+			position: absolute;
+			transform: translate(10px,173px);
+			border-radius: 20px;
+		}
+		.line{
+			background: gray;
+			width: 50px;
+			height: 5px;
+			transform: translate(232px,0);
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+		.card h1{
+			font-size: 20px;
+		}
+		.card h2{
+			font-size: 17px;
+		}
+		.card h3{
+			font-size: 15px;
+		}
+		.cards h1{
+			font-size: 20px;
+		}
+		.cards h2{
+			font-size: 17px;
+		}
+		.cards h3{
+			font-size: 15px;
+		}
+		.album{
+			flex-direction: column;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		.album img{
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			border: none;
+		}
+		.image .img{
+			background: linear-gradient(350deg, black,gray,skyblue);
+			border-radius: 10px;
+			width: 700px;
+			height: 500px;
+			border:2px solid white;
+		}
+		.album button{
+			border-radius: 20px;
+			background: black;
+			border: 1px solid black;
+			color: white;
+			padding: 8px;
+			width: 90px;
+			border: 2px solid black;
+		}
+		
+		.youtube h4 span{
+			font-size: 15px;
+			color: gray;
+		}
+		.right{
+			margin: 0 35px;
+			display: flex;
+			flex-direction: column;
+		}
+		.views{
+			margin-top: -30px;
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
+		.dot{
+			background: black;
+			border-radius: 50%;
+			height: 3px;
+			width: 3px;
+			color: gray;
+		}
+		.views h6{
+			color: gray;
+		}
+		.cards .song{
+			line-height: .9;
+			margin: 0 120px 0 10px;
+		}
+		.card .song{
+			line-height: 1.1;
+			margin: 0 0 0 10px;
+		}
+		.reds button{
+			transform: rotate(0);
+			font-size: 10px;
+			border-radius: 2px;
+			background: rgba(0, 0, 0, 0.2);
+			position: absolute;
+			transform: translate(270px, -10px);
+		}
+		.red span{
+			position: absolute;
+			font-size: 12px;
+			transform: translate(239px, -6px);
+		}
+		.image .red{
+
+			width: 678px;
+			transform: translate(10px, 460px);
+		}
+		.image .line{
+			background: gray;
+			height: 5px;
+			transform: translate(628px,0);
+		}
+		.bottom{
+			display: flex;
+			align-items: center;
+			margin-top: 450px;
+			gap: 15px;
+			margin-left: 15px;
+		}
+		.two{
+			align-items: center;
+			display: flex;
+			gap: 3px;
+		}
+		.left-bottom{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		.right-bottom{
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			transform: translate(275px, 0);
+		}
+		.dots{
+			width: 13px ;
+			height: 13px;
+			background: red;
+			border-radius: 50%;
+			transform: translate(-10px, -5px);
+		}
+		.bottoms{
+			width: 695px;
+			background: #E8E8E8;
+			padding: 1px 5px;
+			border-radius: 10px;
+		}
+		.bottoms p{
+			font-size: 12px;
+		}
+		.next{
+			margin: -20px 0 0 -420px;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+		}
+		.font h2{
+			margin: 10px 0 0 -45px;
+			font-size: 15px;
+		}
+		.new{
+			width: 300px;
+		}
+		.sizes{
+			display: flex;
+			flex-direction: column;
+			gap: 3px;
+		}
+		.small{
+			width: 8px;
+			height: 2px;
+			background: black;
+		}
+		.medium{
+			width: 15px;
+			height: 2px;
+			background: black;
+		}
+		.large{
+			width: 18px;
+			height: 2px;
+			background: black;
+		}
+		.sort{
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+		.lines1{
+			height: 1px;
+			width: 640px;
+			background: lightgray;
+		}
+		.add{
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		.add h5{ 
+			font-weight: 500;
+			color: darkgray;
+			position: absolute;
+			transform: translate(0,-39px);
+		}
+		.add .images{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #FF3DA6;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			border: 2px solid transparent;
+			color: white;
+		}
+		.youtube .img h1{
+			position: absolute;
+			text-align: center;
+			transform: translate(185px, 170px);
+			text-shadow: 0 0 5px black, 0 0 ;
+			color: white;
+			font-family: Roboto Condensed;
+		}
+		.youtube .img h2{
+			position: absolute;
+			font-size: 33px;
+			font-family: Roboto Condensed;
+			transform: translate(210px, 200px);
+		}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.container{
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			background: black;
+		}
+		.circle{
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+			border-bottom: 25px solid black;
+			background: white;
+			box-shadow: 0 5px 5px inset black;
+		}
+		.one{
+			border-bottom: 25px solid black;
+		}
+		.eye{
+			display: flex;
+			gap: 20px;
+			transform: translate(40px,40px);
+		}
+		.mouth{
+			display: flex;
+			background: white;
+			width: 100px;
+			height: 30px;
+			transform: translate(50px,56px);
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			box-shadow: 0 5px 10px inset red,0 -5px 10px inset red;
+		}
+		.dot{
+			background: black;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			transform: translate(30px,25px);
+			box-shadow: 0 0 4px inset white;
+		}
+		.teeth{
+			background: black;
+			width: 10px;
+			height: 12px;
+			transform: translate(5px,5px);
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+		.two{
+			background: white;
+		}
+		.eyes{
+			border-top: 5px solid white;
+			position: absolute;
+			border-radius: 50%;
+			width: 50px;
+			height: 22px;
+			transform: translate(40px,25px);
+		}
+		.three{
+			transform: translate(110px,25px);
+		}
+		h1{
+			position: absolute;
+			transform: translate(0,-135px);
+			font-style: italic;
+		}
+		
+		span{
+			color: black;
+			font-family: Arial;
+		}
+	</style>
+</head>
+<body>
+	<h1><span>CODE</span>MOJI</h1>
+	<div class="container">
+		<div class="eyes"></div><div class="eyes three"></div>
+		<div class="eye">
+			<div class="circle">
+				<div class="dot"></div>
+			</div>
+			<div class="circle one">
+				<div class="dot"></div>
+			</div>
+		</div>
+		<div class="mouth">
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth "></div>
+			<div class="teeth two"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

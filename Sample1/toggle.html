@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+
+		}
+		ul{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			opacity:1;		
+			width: 400px;
+			list-style: none;
+			gap: 10px;
+		}
+		li{
+			width: 100px;
+			text-align: center;
+			background: transparent;
+			border-radius: 20px;
+		}
+		li:hover{
+			
+			box-shadow: 6px 6px 6px inset lightgray,5px 5px 5px rgba(0, 0, 0, 0.05);
+		}
+		a{
+			text-decoration: none;
+		}
+		.active{
+			opacity: 1;
+		}
+		button{
+			box-shadow: 6px 6px 6px inset lightgray;
+			background: white;
+			padding: 5px;
+			height: 25px;
+			width: auto;
+			border-radius: 5px;
+			border: none;
+			display: none;
+		}
+		button:hover{
+			box-shadow: 6px 6px 6px inset lightgray,5px 5px 5px rgba(0, 0, 0, 0.05);
+		}
+		@media (max-width: 780px){
+			header{
+				display: flex;
+			}
+			button{
+				display: flex;
+			}
+			nav{
+				flex-direction: column;
+				opacity: 0;
+			}
+			ul{
+				position: absolute;
+				flex-direction: column;
+			}
+		}
+		@media (max-width: 680px){
+			header{
+				display: flex;
+			}
+			button{
+				display: flex;
+			}
+			nav{
+				flex-direction: column;
+				opacity: 0;
+			}
+			ul{
+				position: fixed;
+				flex-direction: column;
+			}
+		}
+		header{
+			top: 0;
+			position: fixed;
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+			background: rgba(0, 0, 0, 0.05);
+		}
+		
+	</style>
+</head>
+<body>
+
+	<header>
+		<div>
+			<h1>LOGO</h1>
+		</div>
+		
+		<nav id="open">
+			<ul > 
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>	
+		</nav><button onclick="show()">CLICK</button>
+	</header>
+	
+
+<script>
+	function show(){
+		const open = document.getElementById('open');
+		open.classList.toggle('active');
+	}
+</script>
+</body>
+</html>

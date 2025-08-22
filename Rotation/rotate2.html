@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			height: 100vh;
+		}
+		.border{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			width: 200px;
+			height: 200px;
+			border: 10px dotted black;
+			border-radius: 50%;
+		}
+		.one{
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+			border: 5px dashed black;
+		}
+		.two{
+			width: 100px;
+			height: 100px;
+			border: 10px double black;
+			border-radius: 50%;
+		}
+		.lines{
+			position: absolute;
+			width: 190px;
+			height: 10px;
+			background: black;
+			transform: translate(15px,105px)rotate(90deg);
+		}
+		.three{
+			transform: translate(15px,-110px) rotate(0);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="lines"></div>
+		<div class="border">
+			<div class="border one">
+				<div class="border two"></div>
+			</div>
+		</div>
+		<div class="lines three"></div>
+	</div>
+</body>
+</html>

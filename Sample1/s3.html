@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		h1{
+			position: absolute;
+			font-size:100px;
+		}
+		h1:nth-child(1){
+			transform: translate(42px, 38px);
+		}
+		h1:nth-child(2){
+			transform: rotate(270deg) translate(24px, 30px);
+			font-size: 90px;
+		}
+		.circle{
+			transform: translate(20px, 7px);
+			position: absolute;
+			z-index: -1;
+			width: 200px;
+			height: 200px;
+			background: orange;
+			border-radius: 50%;
+			box-shadow: 0 0 30px inset brown, 0 0 15px inset black;
+		}
+	</style>
+</head>
+<body>
+	<h1>H</h1>
+	<h1>J</h1>
+	<h1>G</h1>
+	<div class="circle"></div>
+</body>
+</html>

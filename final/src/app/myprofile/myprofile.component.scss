@@ -1,0 +1,71 @@
+section{
+	margin-top: 100px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-family: Poppins;
+}
+.top{
+	align-items: center;
+	width: 680px;
+	display: flex;
+	gap: 20px;
+	padding: 10px 0;
+}
+.img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: orange;
+}
+
+.card{
+	height: 60px;
+	width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.box{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: 10px;
+	width: 200px;
+	background: orange;
+	border-radius:5px;
+}
+.gender{
+	display: flex;
+	justify-content: space-around;
+	width: 198px;
+	gap: 10px;
+	align-items: center;
+}
+.gender .one{
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	padding: 10px;
+	background: orange;
+}
+.gender .two{
+	background: #CED188;
+}
+.profile{
+	border-radius: 10px;
+	width: 680px;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.08);
+	height: auto;
+}
+.left, 
+.right {
+	align-items: center;
+	justify-content: space-around;
+	width: 350px;
+	display: flex;
+}

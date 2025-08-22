@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			height: 100vh;
+		}
+		.circle{
+			width: 85px;
+			height: 85px;
+			background: red;
+			border-radius: 50%;
+			animation: move 5s infinite;
+			z-index: 1;
+			transition: transform 0.5s ease;
+			transform: translate(-100px, -100px);
+		}
+		@keyframes move{
+			25%{
+				transform: translate(100px,-100px);
+				
+			}
+			50%{
+				transform: translate(10px, 90px);
+			}
+			100%{
+				transform: translate(-90px,-90px);
+			}
+		}
+		.triangle{
+			border-right: 100px solid transparent;
+			border-left: 100px solid transparent;
+			border-bottom: 200px solid black;
+			transform: rotate(180deg);
+			position: absolute;
+		}
+		.line-right{
+			transform: translate(-85px)rotate(-26.5deg);
+			width: 10px;
+			height: 230px;
+			background: red;
+			border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px;
+		}
+		.two{
+			transform: translate(10px)rotate(26.5deg);
+			border-bottom-right-radius: 35px;
+			border-top-right-radius: 35px;
+		}
+		.three{
+			width: 10px;
+			height: 212px;
+			transform: translate(-52px,-100px)rotate(90deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="ice"></div>
+	<div class="ice medium"></div>
+	<div class="circle"></div>
+	<div class="triangle"></div>
+	<div class="line-right"></div>
+	<div class="line-right two"></div>
+	<div class="line-right three"></div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100vh;
+			justify-content: center;
+		}
+		.width{
+			width: 100px;
+			background: wheat;
+			height: 5px;
+		}
+		.height{
+			width: 5px;
+			height: 100px;
+
+		}
+		table{
+			background-image: url("assets/img/me5.jpg");
+			background-position: center;
+			background-size: cover;
+			padding: 5px;
+			border-radius: 10px;
+		}
+		td{
+			height: 50px;
+			box-shadow:  -2px -2px 6px inset lightgrey;
+			font-weight: 900;
+
+		}
+		th, td{
+			color: white;
+			font-size: 20px;
+			padding: 5px;
+			text-align: center;
+			width: 50px;
+			border-right: 1px solid lightgrey;
+			border-bottom: 1px solid lightgrey;
+			background: transparent;
+		}
+		.calendar{
+			padding: 5px;
+			line-height: 0.1;
+			text-align: center;
+			height: 50px;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+		h1{
+			margin-top: 10px;
+			font-weight: 900;
+			font-family: Arial;
+		}
+		h2{
+			margin-top: 10px;
+			font-weight: 400;
+			font-family: monospace;
+		}
+		.special{
+			font-family: Arial;
+			color: hotpink; 
+			font-size: 30px;
+			text-shadow: 0 0 5px black;
+		}
+	</style>
+</head>
+<body>
+	<div class="calendar">
+		<h2>02-19-03</h2>
+	    <h1>FEBRAURY</h1>
+	</div>
+	<table>
+		<tr>
+			<th>Mon</th>
+			<th>Tues</th>
+			<th>Wed</th>
+			<th>Thurs</th>
+			<th>Fri</th>
+			<th>Sat</th>
+			<th>Sun</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+			<td>13</td>
+			<td>14</td>
+			<td>15</td>
+			<td>16</td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>18</td>
+			<td class="special">19</td>
+			<td>20</td>
+			<td>21</td>
+			<td>22</td>
+			<td>23</td>
+		</tr>
+		<tr>
+			<td>24</td>
+			<td>25</td>
+			<td>26</td>
+			<td>27</td>
+			<td>28</td>
+			<td>29</td>
+			<td></td>
+		</tr>
+	</table>
+	
+</body>
+</html>                                                      

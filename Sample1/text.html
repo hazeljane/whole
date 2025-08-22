@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.text{
+			background: black;
+			padding: 10px;
+			width: 126px;
+			height: 50px;
+			align-items: center;
+			display: flex;
+		}
+		
+		h1{
+			color: white;
+			position: absolute;
+			transition: all 0.5s ease;
+		}
+		h1:nth-child(1){
+			opacity: 0;
+			animation: move1 6s infinite;
+		}
+		@keyframes move1{
+			50%{
+				opacity: 1;
+				transform: translate(10px);
+			}
+		}
+		h1:nth-child(2){
+			opacity: 0;
+			animation: move2 6s infinite;
+		}
+		@keyframes move2{
+			50%{
+				opacity: 1;
+				transform: translate(33px);
+			}
+		}
+		h1:nth-child(3){
+			opacity: 0;
+			animation: move3 6s infinite;
+		}
+		@keyframes move3{
+			50%{
+				opacity: 1;
+				transform: translate(54px);
+			}
+		}
+		h1:nth-child(4){
+			opacity: 0;
+			animation: move4 6s infinite;
+		}
+		@keyframes move4{
+			50%{
+				opacity: 1;
+				transform: translate(74px);
+			}
+		}
+		h1:nth-child(5){
+			opacity: 0;
+			animation: move5 6s infinite;
+		}
+		@keyframes move5{
+			50%{
+				opacity: 1;
+				transform: translate(94px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="text">
+		<h1>H</h1>
+		<h1>A</h1>
+		<h1>Z</h1>
+		<h1>E</h1>
+		<h1>L</h1>
+	</div>
+</body>
+</html>

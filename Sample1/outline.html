@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Jockey+One&display=swap');
+		body{
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.one{
+			width: 10px;
+			height: 100px;
+			background: black;
+			transform: translate(75px, -55px);
+		}
+		.line{
+			width: 50px;
+			height: 10px;
+			background: black;
+			transform: translate(70px,-30px)rotate(45deg);
+		}
+		.two{
+			transform: translate(12px, -65px) rotate(-45deg);
+		}
+		.circle{
+			transform: translate(50px,-83px);
+			height: 35px;
+			width: 50px;
+			background: black;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+		}
+		.three{
+			border-bottom-right-radius: 20px;
+			border-right: 10px solid black;
+			border-top: 10px solid black;
+			background: transparent;
+			height: 60px;
+			transform: translate(-1px, -50px) rotate(180deg);
+		}
+		.four{
+			transform: translate(10px, -100px) rotate(45deg);
+		}
+		.five{
+			transform: translate(-10px,-100px) rotate(-45deg);
+		}
+		.six{
+			transform: translate(-54px,-40px);
+		}
+		.box{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			font-size: 40px;
+			font-family: Jockey One;
+			background: orange;
+			width: 300px;
+			height: 180px;
+			position: absolute;
+			border-radius: 10px;
+			box-shadow: -5px -5px 10px inset black, 5px 5px 7px inset white;
+			transition:transform 0.3s ease;
+		}
+		.box:hover{
+			transform:scale(1.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>KEY</h1>
+	</div>
+	<!-- <div class="one"></div>
+	<div class="line"></div>
+	<div class="line two"></div>
+	<div class="circle"></div>
+	<div class="circle three"></div>
+	<div class="line four"></div>
+	<div class="line five"></div>
+	<div class="one six"></div>		 -->
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.circle{
+			width: 400px;
+			height: 400px;
+			border-top: 10px solid black;
+			border-left: 10px solid black;
+			border-right: 10px solid black;
+			border-bottom: 10px solid orange;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.one{
+			box-shadow: 0 0 30px inset black;
+			width: 350px;
+			height: 350px;
+			border-radius: 50%;
+			border-bottom: 10px solid black;
+			border-top: 10px solid orange;
+		}
+		.two{
+			width: 200px;
+			height: 200px;
+			border-top: 10px solid orange;
+			border-bottom: 10px solid black;
+			transform: rotate(45deg);
+		}
+		.h1{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: orange;
+			position: absolute;
+			transform: rotate(0);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		h1{
+			text-shadow: 4px 5px 5px orangered;
+			text-align: center;
+			font-family: Arial;
+			font-size: 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="circle">
+		<div class="circle one">
+			<div class="circle two"></div>
+		</div>		
+		<div class="h1">
+			<h1>LOGO</h1>
+		</div>
+		
+	</div>
+</body>
+</html>

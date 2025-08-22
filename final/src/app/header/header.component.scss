@@ -1,0 +1,67 @@
+header{
+	font-family: Poppins;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px black;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.menu nav{
+	display: flex;
+	width: 450px;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+header li{
+	list-style: none;
+}
+.outside i{
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 50%;
+	background: orange;
+	border:2px solid black;
+}
+.outside i:hover{
+	border:2px solid transparent;
+	box-shadow: 0 5px 5px red;
+}
+.menu li{
+	padding: 10px;
+	cursor: pointer;
+	width: auto;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	transition: border-bottom 0.3s;
+}
+
+.menu{
+	background: red;
+	position: absolute;
+	right: 0;
+	width: 200px;
+	margin-top: 200px;
+	transform: translate(10px);
+	display: none;
+}
+.menu li:hover{
+	background:orange;
+}
+
+.menu.open{
+	display: block;
+}

@@ -1,0 +1,149 @@
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@600&family=Gidole&family=Inconsolata:wght@200..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:wght@100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Tagesschrift&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+
+    .logo img {
+      max-height: 50px;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+    }
+
+    nav ul {
+
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* Menu button for mobile */
+    #menuBtn {
+      font-size: 24px;
+      background: none;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .menu-wrapper {
+      position: relative;
+    }
+
+    .menu-wrapper ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 160px;
+      z-index: 999;
+    }
+
+    .menu-wrapper ul.active {
+      display: block;
+    }
+
+    .menu-wrapper ul li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .menu-wrapper ul li a:hover {
+      background-color: #f5f5f5;
+    }
+
+    /* About Section */
+    section {
+      font-family: "Alumni Sans SC", sans-serif;
+      padding: 40px 20px;
+      
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .container p {
+      font-family: "Outfit", sans-serif;
+      background: orange;
+      padding: 10px;
+      border-radius: 5px;
+      flex: 1 1 250px;
+    }
+
+    /* Responsive: hide nav and move links to menu */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      /* show menu button */
+      #menuBtn {
+        display: block;
+      }
+
+      /* show all links in menu */
+      .menu-wrapper ul li {
+        display: block;
+      }
+    }
+
+    /* On large screens, only show Logout in menu */
+    @media (min-width: 769px) {
+      #menuBtn {
+        display: block;
+      }
+
+      .menu-wrapper ul li:not(.logout-only) {
+        display: none;
+      }
+    }

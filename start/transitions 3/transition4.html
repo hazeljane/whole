@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transition 4</title>
+	<style>
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;background: conic-gradient(yellow, black,green,
+													black,yellow,green, 
+													black);
+			
+			/*animation: background 10s infinite;*/
+			transition: background-position 0.3s ease;
+		}
+		/*@keyframes background{
+			0%{
+				background:conic-gradient( black,red,black);
+			}
+			
+			50%{
+				background:conic-gradient( red,black,red);
+			}
+			100%{
+
+			}
+		}*/
+		.circle{
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			background: black;
+		}
+		.two{
+			transform: translate(50px);
+			/*animation: two 5s infinite;*/
+			transition: transform 0.3s ease-in-out;
+		}
+		@keyframes two{
+			25%{
+				transform: translate(0);
+			}
+			50%{
+				
+				transform: translateY(20px);
+			}
+			100%{
+				box-shadow: 0 0 50px black;
+			}
+		}
+		.circles{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			background: orange;
+			width: 400px;
+			padding: 20px;
+		}
+		.one{
+			background: white;
+			transform: translate(-50px);
+			/*animation: one 5s infinite;*/
+			transition: transform 0.3s ease-in-out;
+		}
+		@keyframes one{
+			50%{
+				transform: translate(50px);
+			}
+			75%{
+				opacity: 0.5;
+			}
+			100%{
+				transform: translateY(-20px);
+			}
+		}
+		section{
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			width: 50%;
+			background: orange;
+			height: 400px;
+		}
+		p{
+			padding: 0 0 20px 0;
+			font-size: 30px;
+			width: 400px;
+			border-bottom: 2px solid black;
+		}
+		.top{
+			position: absolute;
+			z-index: -1;
+			background: orange;
+			height: 300px;
+			width: 300px;
+			border-radius: 50%;
+			transform: translate(-500px,-500px);
+		}
+		.top:nth-child(2){
+			transform: translate(500px,500px);
+		}
+		.top:nth-child(3){
+			transform: translate(-500px,500px);
+		}
+		.top:nth-child(4){
+			transform: translate(500px,-500px);
+		}
+		.line{
+			background: black;
+			height: 20px;
+			width: 800px;
+			position: absolute;
+			transform: translate(280px,-280px)rotate(-45deg);
+		}
+	
+		.three{
+			transform: translate(-280px,-280px) rotate(45deg);
+		}
+		.four{
+			transform: rotate(90deg);
+		}
+		.six{
+			transform: rotate(180deg);
+		}
+		.seven{
+			transform:translate(-280px,280px) rotate(-45deg);
+		}
+		.eight{
+			transform:translate(280px,280px) rotate(45deg);
+		}
+		.gap{
+			line-height: 800px;
+			text-align: center;
+			position: absolute;
+			z-index: 1;
+			color: white;
+			font-size: 35px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top"></div>
+	<div class="top"></div>
+	<div class="top"></div>
+	<div class="top"></div>
+	<section>
+		<div class="card">
+			<h1 style="font-size: 200px;">LEFT</h1>
+		
+		</div>
+	</section>
+	
+	<div class="circles">
+		<div class="gap">
+		<h2>TOP</h2>
+		<h2>BOTTOM</h2>	
+		</div>
+		
+	</div>
+	<section>
+		<div class="card">
+			<h1 style="font-size: 200px;">RIGHT</h1>
+					</div>
+		
+	</section>
+	<div class="line"></div>
+	<div class="line three"></div>
+	<div class="line four"></div>
+	<div class="line six"></div>
+	<div class="line seven"></div>
+	<div class="line eight"></div>
+</body>
+</html>

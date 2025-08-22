@@ -1,0 +1,41 @@
+.one{
+	display: flex;
+}
+.left{
+	background: orange;
+	width: 50%;
+	height: 50%;
+	max-width: 500px;
+	height: 500px;
+}
+.right{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: red;
+	width: 50%;
+	height: 50%;
+	max-width: 500px;
+	height: 500px;
+}
+.line{
+	width: 100%;
+	height: 20px;
+	background: black;
+	transform: 
+	translate(20px,230px)rotate(45deg);
+}
+.two{
+	width: 100%;
+	height: 20px;
+	background: black;
+	transform: 
+	translate(20px,210px)rotate(-45deg);
+}
+.circle{
+	border: 10px solid black;
+	background: transparent;
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+}

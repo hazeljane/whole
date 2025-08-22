@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background: black;
+		}
+		.container{
+			padding: 2px;
+			position: relative;
+			background: orange;
+			border-radius: 50%;
+		}
+		img{
+			border-right: 5px solid red;
+			border-top: 8px solid red;
+			border-left: 8px solid orangered;
+			border-bottom: 5px solid orangered;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		.circle{
+			opacity: 0;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			position: absolute;
+			animation: rotate 10s infinite;
+			
+		}
+		@keyframes rotate{
+			0%{
+				background: red;
+				box-shadow: 0 0 10px orange;
+				transform: translate(0,-120px);
+			}
+			35%{
+				background: orange;
+				box-shadow: 0 0 10px red;
+				transform: translate(-100px, 100px) rotate(45deg);
+			}
+			70%{
+				background: red;
+				box-shadow: 0 0 10px orange;
+				transform: translate(100px, 100px) rotate(-45deg);
+			}
+			100%{
+				transform: translate(0, -100px);
+			}
+		}
+		.line{
+			width: 200px;
+			background: transparent;
+			border-bottom: 3px dashed white;
+			transform: rotate(45deg) ;
+			position: absolute;
+			animation: rotate2 2s infinite;
+		}
+		@keyframes rotate2{
+			50%{
+				transform:translate(-40px, 30px) rotate(45deg);
+			}
+			100%{
+				transform:translate(-35px,-50px) rotate(-45deg);
+				width: 100px;
+			}
+		}
+		.two{
+			transform: rotate(-45deg);
+			animation: rotate1 2s infinite;
+		}
+		@keyframes rotate1{
+			50%{
+				transform: translate(40px,30px)rotate(-45deg);
+			}
+			100%{
+				transform: translate(35px,-50px)rotate(45deg);
+				width: 100px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="img/me1.jpg" alt="">
+		
+	</div><div class="circle">
+		<h2>haze</h2>
+	</div>
+	<div class="line"></div>
+	<div class="line two"></div>
+</body>
+</html>

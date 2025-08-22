@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: black;
+		}
+		.container{
+			/*background: orange;*/
+			/*border: 2px solid black;*/
+			width: 200px;
+			height: 210px;
+			border-top-left-radius: 50px;
+			border-top-right-radius: 53px;
+		}
+		.circle{
+			position: absolute;
+			border-radius: 50%;
+			width: 240px;
+			height: 240px;
+			transform: translate(-23px, -20px);
+			background: black;
+			box-shadow: 0 45px 45px white;
+		}
+		.line{
+			transform: translate(-20px, -36px) rotate(45deg);
+		}
+		.two{
+			/*transform: translate(20px, -38px) rotate(-45deg);*/
+		}
+
+		.eye{
+			box-shadow: 0 5px 5px inset black;
+			background: white;
+			height: 60px;
+			width: 30px;
+			border-radius: 50%;
+			position: absolute;
+			transform: translate(40px, 40px);
+		}
+		.four{
+			transform: translate(125px,40px);
+		}
+		.mouth{
+			background: grey;
+			width: 70px;
+			height: 45px;
+			position: absolute;
+			transform: translate(67px,135px);
+			border-top-right-radius: 15px;
+			border-top-left-radius: 15px;
+			border-bottom-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom: 15px solid black;
+			border-top: 7px solid red;
+			box-shadow: 0 -5px 5px inset red;
+		}
+		.dot{
+			background: white;
+			box-shadow: 0 0 5px inset blue;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			position: absolute;
+			transform: translate(15px,25px);
+		}
+		.lines{
+			width: 60px;
+			height: 5px;
+			/*background: orange;*/
+			position: absolute;
+			transform: translate(67px,74px);
+		}
+		.ear{
+			height: 40px;
+			width: 20px;
+			background: brown;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			position: absolute;
+			transform: translate(0,-10px);
+		}
+		.leaves{
+			background: orangered;
+			height: 20px;
+			border-top-left-radius: 20px;
+			width: 90px;
+			position: absolute;
+			transform: rotate(45deg)translate(-120px,-30px);
+		}
+		.five{
+			transform: rotate(65deg)translate(-122px,-6px);
+		}
+		.six{
+			transform: rotate(85deg)translate(-116px,18px);
+		}
+		.seven{
+			transform: rotate(99deg)translate(-111px,26px);
+		}
+		.eight{
+			transform: rotate(115deg)translate(-105px,38px);
+		}
+		.nine{
+			width: 80px;
+			border-top-right-radius: 20px;
+			transform: rotate(125deg)translate(-97px,35px);
+		}
+		.leave{
+			transform: translate(-130px, -20px);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="circle"></div>
+		<div class="line"></div>
+		<div class="line two"></div>
+		<div class="line three"></div>
+		<div class="eye">
+			<div class="dot"></div>
+		</div>
+		<div class="eye four">
+			<div class="dot"></div>
+		</div>
+		<div class="mouth"></div>
+		<div class="lines"></div>
+	</div>
+	<div class="ear"></div>
+	<div class="leave">
+	<div class="leaves"></div>
+	<div class="leaves five"></div>
+	<div class="leaves six"></div>
+	<div class="leaves seven"></div>
+	<div class="leaves eight"></div>
+	<div class="leaves nine"></div>		
+	</div>
+
+</body>
+</html>

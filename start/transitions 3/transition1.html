@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.circle{
+			width: 50px;
+			height: 50px;
+			border: 2px solid black;
+			border-radius: 50%;
+			animation: rotate 10s infinite;
+			transition: transform .3s ease;
+		}
+		@keyframes rotate{
+			50%{
+				transform: scale(1.2) rotate(90deg);
+			}
+			100%{
+				transform: rotate(-40deg);
+			}
+		}
+		.one{
+			transform: translate(10px, 10px);
+			width: 100px;
+			height: 100px;
+		}
+		.two{
+			transform: translate(10px, 10px);
+			width: 150px;
+			height: 150px;
+		}
+		.three{
+			transform: translate(20px, 20px);
+			width: 200px;
+			height: 200px;
+		}
+		
+		
+		span{
+			opacity: 1;
+			animation: opacity 10s infinite;
+			width: 50px;
+			height: 50px;
+			background: black;
+			border-radius: 50%;
+			transition: transform .3s ease;
+		}
+		
+		span:nth-child(1){
+			transform: scale(0.7)translate(18px,28px);
+		}
+		span:nth-child(2){
+			transform: scale(1.1)translate(4px,4px);
+		}
+		span:nth-child(3){
+			transform: scale(1.2)translate(9px,10px);
+		}
+		span:nth-child(4){
+			transform: scale(1.3)translate(-5px,50px);
+		}
+		.this{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+	<div class="circle">
+		<div class="circle one">
+			<div class="circle two">
+				<div class="circle three">
+					<div class="this">
+						<span></span>
+					    <span></span>
+					    <span></span>
+					    <span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

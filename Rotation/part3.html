@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.box{
+			display: flex;
+			width: 200px;
+			height: 100px;
+			background: black;
+		}
+		.one ,.two{
+			width: 50px;
+			height: 50px;
+			border: 2px solid white;
+		}
+		.two{
+			border-radius: 50%;
+		}
+		.triangle{
+			background: transparent;
+			width: 0;
+			height: 0;
+			border-bottom: 50px solid white;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+		}
+		.diamond{
+			background: transparent;
+			width: 0;
+			height: 0;
+			border-bottom: 30px solid white;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			position: absolute;
+			transform: rotate(180deg)
+		}
+		.diamonds .diamond:nth-child(1){
+			transform: rotate(0)translate(0, -29.4px);
+		}
+		.top{
+			padding: 1   0px;
+			width: 200px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		h3{
+			transform: translate(-90px,0)rotate(-90deg);
+			color: white;
+			position: absolute;
+		}
+		.p{
+			position: absolute;
+			transform: translate(0,200px);
+			padding: 10px;
+			background: orange;
+			width: 400px;
+		}
+	</style>
+</head>
+<body>
+	<h3>shapes</h3>
+	<div class="box top">
+		<div class="box one"></div>
+		<div class="box two"></div>
+		<div class="box triangle"></div>
+		
+		<div class="diamonds">
+			<div class=" diamond"></div>
+			<div class=" diamond"></div>
+		</div>
+	</div>
+	<div class="p">
+		<p>You should apply a width and height and the background or i did it a border with how many border you would like and what kind of border you want it has an option if its solid it will be a whole line and if dotted and dashed that's the other options. If you want it a triangle your width and height is 0 and the transparent is right and left border-bottom will be solid and a color and for the diamond it was two triangle and the width for borderbottom is becomes the height and the right and left becomes the width </p>
+	</div>
+</body>
+</html>

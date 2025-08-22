@@ -1,0 +1,43 @@
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: wheat;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+}
+nav{
+	width:300px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+}
+.showMenu{
+	right: 20px;
+	top: 60px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100px;
+	border-radius: 10px;
+	
+	background: orange;
+}
+.showMenu a{
+	padding: 10px;
+}
+.showMenu a:hover{
+	background: orangered;
+	color: wheat;
+}
+.showMenu .first:hover{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.showMenu .last:hover{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}

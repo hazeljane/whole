@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<title>Document</title>
+	<style>	
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;	
+		}
+		
+		.circle{
+			width: 400px;
+			height: 400px;
+			background: black;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.one{
+			transform: translate(420px);
+			width: 180px;
+			height: 260px;
+			z-index: 1;
+			background: transparent;
+			border-top:40px solid black;
+			box-shadow: 0 -20px 20px orange;
+		}
+		.two{
+			width: 50px;
+			z-index: 1;
+			height: 200px;
+			position: absolute;
+			background: transparent;
+			border-left:40px solid orangered;
+			transform: translate(65px);
+			
+		}
+		.three{
+			transform: translate(10px);
+			width: 200px;
+			background: transparent;
+			height: 200px;
+			position: absolute;
+			border-right:40px solid red;
+			z-index: 1;
+		}
+		.four{
+			transform: translate(420px, -300px);
+			width: 180px;
+			background: transparent;
+			height: 220px;
+			position: absolute;
+			border-bottom:40px solid black;
+			box-shadow: 0 20px 20px lightgreen;
+			
+		}
+		.rotate{
+			width: 100px;
+			height: 100px;
+			background: black;
+			border: 10px solid orangered;
+			border-top-left-radius:50% ;
+			border-bottom-right-radius: 50%;
+			border-top-right-radius: 50%;
+
+		}
+		.line{
+			width: 30px;
+			height:95px;
+			background: black;
+			box-shadow: 10px 5px 10px orangered;
+		}
+		.lines{
+			width: 30px;
+			height: 95px;
+			background: black;
+			transform: translate(39px,-3px)rotate(-45deg);
+			position: absolute;
+			box-shadow: 10px 7px 10px orangered;
+		}
+		.r{
+			background: transparent;
+			padding: 20px;
+			border-radius: 20px;
+			z-index: 1;
+			width: 120px;
+			transform: translate(-200px, 330px);
+		}		
+		.d{
+			transform: translate(-450px, 360px);
+		}
+		.o{
+			transform:rotate(90deg) translate(280px, 590px);
+		}
+		.line2{
+			background: red;
+			width: 30px;
+			height: 200px;
+			position: absolute;
+			transform: translate(-50px, 110px);
+			border-radius: 20px;
+			box-shadow: 10px 0 10px black;
+		}
+		.line1{
+			width: 100px;
+			height: 20px;
+			background: red;
+			border-top-right-radius: 10px;
+		}
+		.line3{
+			width: 100px;
+			height: 20px;
+			background: red;
+			border-radius: 10px;
+			transform: translate(0,70px);
+		}
+		.line4{
+			width: 100px;
+			height: 20px;
+			background: red;
+			border-top-right-radius: 10px;
+			transform: translate(0,140px);	
+		}
+		.a{
+			transform: translate(80px, 110px);
+		}
+		.slant{
+			transform: rotate(15deg);
+			background: black;
+			width: 35px;
+			height: 200px;
+			border-top-left-radius: 20px;
+		}
+		.slants{
+			border-top-right-radius: 20px;
+			transform: translate(53px,-200px)rotate(-15deg);
+			background: black;
+			width: 35px;
+			height: 200px;
+		}
+		.lines5{
+			width: 100px;
+			height: 20px;
+			transform: translate(0, -255px);
+			background: black;
+		}
+		.m{
+			position: absolute;
+			display: flex;
+			transform: translate(190px, -320px);
+		}
+		.left{
+			border-top: 10px solid orangered;
+			border-left: 10px solid orangered;
+			border-radius: 50%;
+			width: 80px;
+			height: 200px;
+		}
+		.right{
+
+			border-right: 10px solid orangered;
+			border-top: 10px solid orangered;
+			border-radius: 50%;
+			width: 80px;
+			height: 200px;
+		}
+		h1{
+			font-size: 70px;
+			transform: translate(-360px, 390px);
+		}
+		.top{
+			width: 100px;
+			height: 20px;
+			background: black;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+		.sl{
+			border:none;
+			height: 50px;
+			width: 20px;
+			background: black;
+		}
+		.tc{
+			border-bottom-left-radius: 20px;
+			border:none;
+			width: 100px;
+			height: 20px;
+			background: black;
+			border-top-right-radius: 20px;
+		}
+		.dl{
+			border:none;
+			transform: translate(81px);
+			background: black;
+			width: 20px;
+			height: 80px;
+			border-bottom-right-radius: 20px;
+		}
+		.br{
+			border:none;
+			width: 100px;
+			height: 20px;
+			background: black;
+			transform: translate(-1px,-20px);
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+		}
+		.s{
+			border:none;
+			position: absolute;
+			transform: translate(380px, -340px);
+		}
+		.ls{
+			transform: translate(82px, 40px);
+			width: 20px;
+			height: 40px;
+			background: black;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+		.this{
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 0;
+			transform: translate(-1px, -80px);
+		}
+	</style>
+</head>
+<body>
+	<div class="dream">	
+	<h1>IN MY</h1>
+	<div class="d">	
+		<div class="circle three"></div>
+		<div class="circle two"></div>
+	</div>
+	<div class="r">	
+		<div class="rotate"></div>
+			<div class="line">
+				<div class="lines"></div>
+			</div>
+	</div>	
+	<div class="line2">
+		<div class="line1"></div>
+		<div class="line3"></div>
+		<div class="line4"></div>
+	</div>
+	<div class="a">	
+		<div class="slant"></div>
+		<div class="slants"></div>
+		<div class="lines5">	</div>
+	</div>	
+	<div class="m">
+		<div class="left"></div>
+		<div class="right">	</div>
+	</div>
+	<div class="s">
+		<div class="ls"></div>
+		<div class="top"></div>
+		<div class="sl"></div>
+		<div class="tc"></div>
+		<div class="dl"></div>
+		<div class="br"></div>
+		<div class="ls this"></div>
+	</div>
+	</div>
+</body>
+</html>

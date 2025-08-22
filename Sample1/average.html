@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.circle{
+			width: 500px;
+			height: 500px;
+			padding: 10px;
+			background: burlywood;
+			border-radius: 50%;
+		}
+		.piece{
+			position: absolute;
+			height: 0;
+			width: 0;
+			border-right: 100px solid transparent;
+			border-left: 100px solid transparent;
+			border-bottom: 250px solid wheat;
+			border-bottom-left-radius:100px;
+			border-bottom-right-radius:80px;
+		}
+		.piece:nth-child(1){
+			border-bottom-left-radius:90px;
+			border-bottom-right-radius:80px;
+			border-bottom: 260px solid wheat;
+			transform: translate(62px , 48px)rotate(137deg);
+		}
+		.piece:nth-child(2){
+			transform: translate(150px ,20px)rotate(180deg);
+		}
+		.piece:nth-child(3){
+			border-bottom-left-radius:100px;
+			border-bottom-right-radius:93px;
+			transform: translate(237px, 58px)rotate(224deg);
+		}
+		.piece:nth-child(4){
+			border-bottom: 240px solid wheat;
+			border-bottom-left-radius:110px;
+			border-bottom-right-radius:80px;
+			transform: translate(270px, 151px)rotate(268.5deg);
+		}
+		.piece:nth-child(5){
+			border-bottom: 235px solid wheat;
+			border-bottom-left-radius:110px;
+			border-bottom-right-radius:100px;
+			transform: translate(230px, 240px)rotate(314.7deg);
+		}
+		.piece:nth-child(6){
+			border-bottom: 220px solid wheat;
+			border-bottom-left-radius:100px;
+			border-bottom-right-radius:76px;
+			transform: translate(140px, 275px)rotate(362deg);
+		}
+		.piece:nth-child(7){
+			border-bottom: 212px solid wheat;
+			border-bottom-left-radius:100px;
+			border-bottom-right-radius:80px;
+			transform: translate(60px, 232px)rotate(412deg);
+		}
+		.piece:nth-child(8){
+			border-right: 75px solid transparent;
+			border-left: 80px solid transparent;
+			border-bottom: 227px solid wheat;
+			border-bottom-left-radius:20px;
+			border-bottom-right-radius:100px;
+			transform: translate(55px, 143px)rotate(456deg);
+		}
+		.circles{
+			width: 37px;
+			height: 45px;
+			border-radius: 50%;
+			background: linear-gradient(45deg, orange,brown);
+			border: 4px solid orangered;
+			position: absolute;
+			transform: translate(-60px, 170px);
+			z-index: 1;
+		}
+		.circles:nth-child(2){
+			transform: translate(-10px, 100px);
+		}
+		.circles:nth-child(3){
+			width: 4px;
+			height: 45px;
+			transform: translate(25px, 170px) rotate(10deg);
+			background: green;
+			border: none;
+			border-radius: 1px;
+		}
+		.circles:nth-child(4){
+			width: 4px;
+			height: 45px;
+			transform: translate(-10px, 60px) rotate(35deg);
+			background: green;
+			border: none;
+			border-radius: 1px;
+		}
+		.one{
+			transform: translate(-54px, 155px);
+		}
+		.two{
+			transform: translate(-54px, 145px);
+		}
+		.three .circles:nth-child(3){
+			transform: translate(20px,155px) rotate(45deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="circle">
+		<div class="piece">
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+		</div>
+		<div class="piece">
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+		</div>
+		<div class="piece">
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+		</div>
+		<div class="piece">
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+		</div>
+		<div class="piece">
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+		</div>
+		<div class="piece">
+			<div class="circles one"></div>
+			<div class="circles one"></div>
+			<div class="circles"></div>
+			<div class="circles "></div>
+		</div>
+		<div class="piece three">
+			<div class="circles two"></div>
+			<div class="circles two"></div>
+			<div class="circles"></div>
+			<div class="circles"></div>
+		</div>	
+		<div class="piece">
+			<div class="circles"></div>
+			<div class="circles"></div>
+			<div class="circles "></div>
+			<div class="circles "></div>			
+		</div>
+</body>
+</html>

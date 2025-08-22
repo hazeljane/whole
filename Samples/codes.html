@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.container{
+			border: 5px solid black;
+			transform: rotate(97deg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 210px;
+			height: 210px;
+			background: orange;
+			border-radius: 50%;
+		}
+		.border{
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 160px;
+			height: 160px;
+			border-top: 10px solid black;
+			background: transparent;
+			border-right: 10px solid transparent;
+			border-left: 10px solid transparent;
+			border-bottom: 10px solid text-replace: ;
+			border-radius: 50%;
+		}
+		.one{
+			box-shadow: 0 0 15px inset red;
+
+			background: transparent;
+			width: 160px;
+			height: 160px;
+			border-bottom: 10px solid black;
+			border-top: 10px solid transparent;
+			transform: rotate(80deg);
+		}
+		.two{
+			transform: rotate(80deg);
+		}
+		.three{
+
+			width: 120px;
+			height: 120px;
+			transform: rotate(-80deg) translate(0, 16px);
+			justify-content: space-around;
+		}
+		.dot{
+			background: black;
+			width: 20px;
+			height: 25px;
+			border-radius: 50%;
+			box-shadow: 0 -5px 5px inset gray;
+		}
+		h1{
+			color: gray;
+			position: absolute;
+			transform: translate(62px, -40px);
+		}
+		.four h1{
+			transform: translate(-50px,-40px);
+		}
+		.blush{
+			width: 20px;
+			height: 20px;
+			background: transparent;
+			box-shadow: 0 0 10px inset red;
+			border-radius: 40px;
+			transform:translate(55px,-55px)rotate(100deg);
+		}
+		.five{
+			transform:translate(-105px,46px)rotate(100deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="border">
+			<div class="border one">
+				<div class="border two">
+				<div class="blush"></div>
+					<div class="border three">
+						<div class="dot">
+							<h1>.</h1>
+						</div>
+						<div class="dot four">
+							<h1>.</h1>
+						</div>
+					</div>
+					<div class="blush five"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

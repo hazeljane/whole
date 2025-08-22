@@ -1,0 +1,91 @@
+body{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	background: linear-gradient(45deg,black,green,orange);
+.container{
+	display: flex;
+	justify-content: space-around;
+	width: 200px;
+	height: auto;
+	gap: 10px;
+	position: absolute;
+	align-items: center;
+}
+.container:nth-child(1){
+	transform:  rotate(225deg) translate(145px,0);
+}
+.container:nth-child(2){
+	transform:  rotate(270deg) translate(145px,0);
+}
+.container:nth-child(3){
+	transform: rotate(315deg) translate(145px);
+}
+.container:nth-child(4){
+	transform: rotate(360deg) translate(145px);
+}
+.container:nth-child(5){
+	transform: rotate(45deg) translate(145px);
+}
+.container:nth-child(6){
+	transform: rotate(90deg) translate(145px);
+}
+.container:nth-child(7){
+	transform: rotate(135deg) translate(145px);
+}
+.container:nth-child(8){
+	transform: rotate(180deg) translate(145px);
+}
+.box{
+	width: 20px;
+	height: 10px;
+	background: linear-gradient(45deg,red, orange);
+}
+.box:nth-child(2){
+	width: 90px;
+	height: 10px;
+	background: linear-gradient(45deg, white, yellow);
+}
+.box:nth-child(3){
+	width: 120px;
+	height: 10px;
+	background: linear-gradient(45deg, orange, white);
+}
+.circle{
+	width: 55px;
+	height: 55px;
+	background: black;
+	border-radius: 50%;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.one{
+	width: 100px;
+	height: 100px;
+	background: transparent;
+}
+.two{
+	width: 275px;
+	height: 275px;
+	background: transparent;
+	border: 10px solid lightgreen;
+	box-shadow: 15px 15px 20px inset black;
+}
+.three{
+	width: 480px;
+	height: 480px;
+	background: transparent;
+	border: 10px solid #FBD898;
+	box-shadow: 5px 5px 20px inset black;
+}
+
+.four{
+	width: 400px;
+	height: 400px;
+	background: transparent;
+	border: 10px solid #D49A9A;
+	box-shadow: -10px -10px 20px inset black;
+}

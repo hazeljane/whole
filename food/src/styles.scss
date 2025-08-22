@@ -1,0 +1,122 @@
+	.container{
+		background: #FBAC7C;
+	}
+	a{
+		width: 100px;
+		background: transparent;
+		text-align: center;
+		text-decoration: none;
+		padding: 5px;
+		color: black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		transition: 0.3s ease,
+					color 0.3s ease;
+		font-family: Arial;
+	}
+	a:hover{
+		background: rgba(0, 0, 0, 0.08);
+
+	}
+	a:nth-child(odd){
+
+	}
+	header{
+		background: #FBAC7C;
+		padding-top: 5px;
+		width: 100vw;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		top: 0;
+		position: fixed;
+	}
+	nav{
+		width: 400px;
+		justify-content: center;
+		display: flex;
+	}
+	.active{
+		color: white;
+		background: orangered;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.active:hover{
+		background: orangered;
+	}
+	section{
+		background: orangered;
+		position: fixed;
+		padding-top: 20px;
+		width: 100vw;
+		margin: 25px 0;
+		left: 0;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow: scroll;
+	}
+	.card{
+		display: flex;
+		font-family: Arial;
+		max-width: 700px;
+		border-radius: 20px;
+		width: 100%;
+		padding: 20px;
+		background: rgba(0, 0, 0, 0.08);
+	}
+	.img{
+		box-shadow: 0 5px 10px black;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+	}
+	.ml{
+		margin-left: 15px;
+	}
+	.mr{
+		margin-left: 10px;
+	}
+	.divider{
+		width: 10px;
+		height: 200px;
+		margin-bottom: 15px;
+		background: linear-gradient(45deg, wheat, skyblue);
+	}
+	.img{
+		background: url("assets/img/me1.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	@media screen and (max-width: 780px){
+		.card{
+			width: 90%;
+			align-items: center;
+			flex-direction: column; 
+		}
+		.gp{
+			padding: 0 0 15px;
+			border-right: 2px solid transparent;
+			border-bottom: 2px dashed wheat;
+		}
+		.divider{
+			transform: rotate(0);
+		width: 100%;
+		height: 2px;
+		margin-bottom: 15px;
+		background: linear-gradient(45deg, wheat, skyblue);
+		}
+		.mr{
+			padding-bottom: 20px;
+			margin-top:-5px;
+		}
+		.card p:nth-child(2){
+			padding-bottom: 15px;
+		}
+	}

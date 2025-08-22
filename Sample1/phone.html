@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_circle_right" />
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Jockey+One&display=swap');
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		
+		.card{
+			display: flex;
+			width: 350px;
+			justify-content: space-around;
+		}
+		.circle{
+			width: 100px;
+			height: 100px;
+			background: radial-gradient(red,black);
+			border: 1px solid black;
+			border-radius: 50%;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.one{
+			flex-direction: column;
+			display: flex;
+		}
+		
+		h1{
+			font-family: Roboto Condensed;
+			font-size: 45px;
+			color: burlywood;
+		}
+		p{
+			font-family: Jockey One;
+		}
+		.info{
+			position: absolute;
+			opacity: 0;
+			transition: transform 0.3s ease;
+		}
+		.card:nth-child(2){
+			margin-top: 10px;
+		}
+		@media (max-width: 780px){
+			.one{
+				flex-direction: column;
+				gap: 10px;
+			}
+			.circle{
+				transform: translate(-85px);
+				z-index:1;
+			}
+			.info{
+				transform: translate(0, 10px);
+				opacity: 1;
+				width: 280px;
+				height: 70px;
+				background: orange;
+				border: 2px solid black;
+				border-radius: 10px;
+			}
+			.active1 p{
+				opacity: 1;	
+			}
+			.active1{
+				transform: translate(20px, 10px);
+			}
+			.active2 p{
+				opacity: 1;	
+			}
+			.active2{
+				transform: translate(20px, 10px);
+			}
+			.active3 p{
+				opacity: 1;	
+			}
+			.active3{
+				transform: translate(20px, 10px);
+			}
+			
+			p{
+				opacity: 0;
+				margin: 10px 0 0 70px;
+			}
+			span{
+				opacity: 1;
+				background: orange;
+				position: absolute;
+				width: 21px;
+				height: 21px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				color: white;
+				transform: translate(125px,35px);
+			}
+		} 
+		@media (max-width: 680px){
+			.card{
+				transform: translate(85px);
+				flex-direction: column;
+			}
+			.info{
+				transform: translate(-50px, 60px);
+			}
+			p{
+				margin: 15px 0 0 10px;
+			}
+			span{
+				opacity: 1;
+				background: orange;
+				position: absolute;
+				width: 21px;
+				height: 21px;
+				border-top-right-radius: 20px;
+				border-bottom-right-radius: 20px;
+				color: white;
+				transform: translate(200px,45px);
+			}
+		}
+		.move{
+			transition: transform 0.3s ease;
+		}
+		.choices{
+			text-align: center;
+			width: 350px;
+			background: black;
+			padding: 10px;
+		}
+		.one{
+			display: flex;
+		}
+
+		button{
+			position: absolute;
+			background: transparent;
+			border: none;
+		}
+		
+	</style>
+</head>
+<body>
+<div class="choices">
+	<h1 class="h1">OPTIONAL</h1>
+	<div class="one">
+<div class="card">
+	<div class="info" id="info1">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</div>
+	<button id="move1" onclick="show1()">
+		<span class="material-symbols-outlined">arrow_circle_right</span>
+	</button>
+		<div class="circle">
+			<h1>1</h1>
+		</div>
+</div>
+<div class="card">
+	<div class="info" id="info2">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</div>
+	<button id="move2" onclick="show2()">
+		<span class="material-symbols-outlined">arrow_circle_right</span>
+	</button>
+		<div class="circle">
+			<h1>2</h1>
+		</div>
+</div>
+<div class="card">
+	<div class="info" id="info3">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</div>
+	<button id="move3" onclick="show3()">
+		<span class="material-symbols-outlined">arrow_circle_right</span>
+	</button>
+		<div class="circle">
+			<h1>3</h1>
+		</div>
+</div>
+</div>
+</div>
+<script>
+	function show1(){
+		const info1 = document.getElementById('info1');
+		const move1 = document.getElementById('move1');
+		info1.classList.toggle('active1');
+		move1.style.transform="translate(10px, 0)";
+	}
+	function show2(){
+		const info2 = document.getElementById('info2');
+		const move2 = document.getElementById('move2');
+		info2.classList.toggle('active2');
+		move2.style.transform="translate(10px, 0)";
+	}
+	function show3(){
+		const info3 = document.getElementById('info3');
+		const move3 = document.getElementById('move3');
+		info3.classList.toggle('active3');
+		move3.style.transform="translate(10px, 0)";
+	}
+</script>
+</body>
+</html>

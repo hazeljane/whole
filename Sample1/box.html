@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.border{
+			border-radius: 10px;
+			background: linear-gradient(145deg, magenta, violet, orange,red);
+			width: 200px;
+			height: 50px;
+			background-size: 400% 400%;
+			animation: background 5s infinite;
+		}
+		@keyframes background{
+			50%{
+				background-position: 100% 50%;
+			}
+		}
+		
+		
+		.background{
+			transform: translate(5px,5px);
+			background: black;
+			width: 190px;
+			position: absolute;
+			height: 40px;
+			border-radius: 10px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="border">
+		<div class="background">
+			
+		</div>
+		
+	</div>
+</body>
+</html>

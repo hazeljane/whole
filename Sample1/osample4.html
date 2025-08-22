@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background: black;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .border-rotate {
+      position: relative;
+      width: 160px;
+      height: 40px;
+      border-radius: 12px;
+      padding: 3px;
+      background: conic-gradient(from 0deg, red, orange, yellow, green, blue, violet, red);
+      animation: spin-border 4s linear infinite;
+    }
+
+    .border-rotate .content {
+      background: black;
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: monospace;
+      box-shadow: 0 0 5px white;
+    }
+
+    @keyframes spin-border {
+      0% {
+        background: conic-gradient(from 0deg, red, orange, yellow, green, blue, violet, red);
+      }
+      100% {
+        background: conic-gradient(from 360deg, red, orange, yellow, green, blue, violet, red);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="border-rotate">
+    <div class="content">HOME</div>
+  </div>
+</body>
+</html>

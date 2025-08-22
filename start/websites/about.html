@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive About Page</title>
+  
+  <link rel="stylesheet" href="../css/about.css">
+  <style>
+    button{
+      font-family: "Jost", sans-serif;
+    }
+    ul{
+      font-family: "Savate", sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="../img/logob.png" alt="Logo">
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-wrapper">
+    <button onclick="toggleMenu()" id="menuBtn">☰ Menu</button>
+    <ul id="mobileMenu">
+      <li><a href="../websites/home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="logout-only"><a href="use.html">Logout</a></li>
+    </ul>
+  </div>
+</header>
+
+<section>
+  <div class="card">
+    <h1>ABOUT</h1>
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Quod similique veritatis nemo quas exercitationem provident.</p>
+      <p>Error temporibus minus delectus quasi mollitia.</p>
+    </div>
+  </div>
+</section>
+
+<script src="../js/scripts.js">
+
+</script>
+
+</body>
+</html>

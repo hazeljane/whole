@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			height: 100vh;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			border: 2px solid black;
+			transform: rotate(90deg);
+			/*animation: move 10s infinite;*/
+		}
+		.line .six{
+			height: 2px;
+			width: 100px;
+			transform: translate(-90px,0px);
+		}
+		.one{
+			position: absolute;
+			width: 180px;
+			height: 180px;
+			
+			
+		}
+		@keyframes move{
+			100%{
+				transform: rotate(180deg);
+			}
+			
+		}
+		.two{
+			transform: rotate(90deg);
+			box-shadow: 10px 10px 20px blue;
+			width: 120px;
+			height: 120px;
+		}
+		.three{
+			transform: rotate(45deg);
+			box-shadow: 10px 10px 20px yellow;
+			width: 140px;
+			height: 140px;
+		}
+		.four{
+			transform: rotate(150deg);
+			box-shadow: 10px 10px 20px red;
+			width: 160px;
+			height: 160px;
+		}
+		
+		.line{
+			width: 190px;
+			height: 2px;
+			background: black;
+			transform: translate(38px,132px)rotate(45deg);
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="new">
+			<div class="box two">
+				<div class="box three">
+					<div class="box four">
+						<div class="line">
+							<div class="line six"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container {
+			padding: 10px;
+			max-width: 400px;
+			width: 100%;
+			height: auto;
+			background: black;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			gap: 10px;
+		}
+
+		.card{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: orange;
+			width: 100px;
+			height: auto;
+			padding: 10px;
+		}
+		@media (max-width: 780px){
+			.card{
+				width: 100%;
+			}
+			img{
+				width: 100%;
+			}
+		}
+		img{
+			width: 100%;
+			height: 80px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<h2>NAME</h2>
+			<img src="" alt="">
+			<span>$99.05</span>
+		</div>
+		<div class="card">
+			<h2>NAME</h2>
+			<img src="" alt="">
+			<span>$55.05</span>
+		</div>
+		<div class="card">
+			<h2>NAME</h2>
+			<img src="" alt="">
+			<span>$75.05</span>
+		</div>
+	</div>
+</body>
+</html>

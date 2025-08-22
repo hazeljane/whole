@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CODEMOJI</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			background: linear-gradient(45deg, brown, orange);
+			font-family: Arial, sans-serif;
+			overflow: auto;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 30px;
+			gap: 30px;
+		}
+
+		h1 {
+			color: white;
+			text-shadow: 0 1px 2px red, 0 3px 2px black;
+			font-style: italic;
+			margin: 0;
+		}
+
+		span {
+			color: wheat;
+			text-transform: lowercase;
+			text-shadow: 0 1px 2px black;
+		}
+
+		.container {
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			background: black;
+			position: relative;
+			flex-shrink: 0;
+			flex-grow: 0;
+		}
+
+		.eyes {
+			border-top: 5px solid white;
+			position: absolute;
+			border-radius: 50%;
+			width: 50px;
+			height: 22px;
+			transform: translate(40px, 25px);
+		}
+
+		.three {
+			transform: translate(110px, 25px);
+		}
+
+		.eye {
+			display: flex;
+			gap: 20px;
+			transform: translate(40px, 40px);
+		}
+
+		.circle {
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+			border-bottom: 25px solid black;
+			background: white;
+			box-shadow: 0 5px 5px inset black;
+		}
+
+		.dot {
+			background: black;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			transform: translate(30px, 25px);
+			box-shadow: 0 0 4px inset white;
+		}
+
+		.mouth {
+			display: flex;
+			background: white;
+			width: 100px;
+			height: 30px;
+			transform: translate(50px, 56px);
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			box-shadow: 0 5px 10px inset red, 0 -5px 10px inset red;
+		}
+
+		.teeth {
+			background: black;
+			width: 10px;
+			height: 12px;
+			transform: translate(5px, 5px);
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+
+		.two {
+			background: white;
+		}
+
+		.left {
+			max-width: 400px;
+			color: black;
+		}
+
+		.left p {
+			margin: 10px 0;
+		}
+
+		.left h2 {
+			margin-top: 10px;
+			color: wheat;
+		}
+
+		/* Responsive: on small screen or zoomed in, side-by-side layout */
+		@media (max-width: 600px) {
+			body {
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: flex-start;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<h1><span>CODE</span>MOJI</h1>
+
+	<div class="container">
+		<div class="eyes"></div>
+		<div class="eyes three"></div>
+		<div class="eye">
+			<div class="circle">
+				<div class="dot"></div>
+			</div>
+			<div class="circle one">
+				<div class="dot"></div>
+			</div>
+		</div>
+		<div class="mouth">
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth two"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+			<div class="teeth"></div>
+		</div>
+	</div>
+
+	<div class="left">
+		<p>"Appreciate your growth, because it will lead you to greatness."</p>
+		<p>"This year, I started dreaming big. I hope those dreams come true when I graduate—I'm currently a third-year student about to enter my fourth year."</p>
+		<p style="font-style: italic; margin-top: 20px;">So help me, God.</p>
+		<h2><i>2025</i></h2>
+	</div>
+
+</body>
+</html>

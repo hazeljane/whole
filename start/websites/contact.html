@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/contact.css">
+	<style>
+		a{
+			font-size: 30px;
+			font-family: "Alumni Sans SC", sans-serif;
+		}
+		h1{
+			font-family: "Pacifico", cursive;
+		}
+		input,textarea{
+			font-family: "Raleway", sans-serif;
+		}
+		button{
+			font-family: "Jost", sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="../img/logo3.png" alt="Logo">
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="../websites/about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-wrapper">
+    <button onclick="toggleMenu()" id="menuBtn">☰ Menu</button>
+    <ul id="mobileMenu">
+      <li><a href="../websites/home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="logout-only"><a href="use.html">Logout</a></li>
+    </ul>
+  </div>
+</header>
+
+<section>
+	<div class="container">
+	<h1>CONTACT</h1>
+	<form action="">
+		<input type="email" placeholder="Email" required>
+		
+		<textarea  placeholder="message.." required></textarea>
+		<div class="btn">
+			<button type="submit">Submit</button>
+		</div>
+        
+	</form>	
+	</div>
+	
+</section>
+<script src="../js/scripts.js"></script>
+</body>
+</html>

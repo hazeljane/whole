@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.circle{
+			width: 100px;
+			height: 100px;
+			background: black;
+			animation: rt1 5s infinite;
+			transition: transform 0.3s ease, background 0.3s ease;
+			z-index: 1;
+		}
+		@keyframes rt1{
+			50%{
+				transform: rotate(45deg);
+				box-shadow: 0 0 10px inset orange;
+				background: black;
+			}
+		}
+		.one{
+			width: 100px;
+			height: 100px;
+			padding: 20px;
+			background: orange;
+			position: absolute;
+			transform: rotate(45deg);
+			animation: rt2 3s infinite;
+			transition: transform 0.3s ease, background 0.3s ease,
+					z-index 0.3s ease height 0.3s ease, width 0.3s ease;
+
+		}
+		@keyframes rt2{
+			50%{
+				width: 100px;
+				height: 100px;
+				transform: rotate(0);
+				box-shadow: 5px 5px 10px inset wheat;
+				background: orange;
+			}
+			0%{
+				z-index: 0.9;
+				width: 90px;
+				height: 90px;
+				transform: rotate(45deg);
+			}
+		}
+		.two{
+			width: 200px;
+			height: 200px;
+			background: black;
+			animation: rt1 5s infinite;
+			position: absolute;
+			transition: transform 0.3s ease, background 0.3s ease;
+			z-index: -1;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="circle"></div>	
+	<div class="one"></div>
+	<div class="two"></div>
+</body>
+</html>

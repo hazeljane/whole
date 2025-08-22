@@ -1,0 +1,20 @@
+<header>
+  <h1>LOGO</h1>
+  <nav>
+    <a routerLink="/home">Home</a>
+    <a routerLink="/about">About</a>
+
+    <a (click)="toggleShowMenu()" >
+      <i class="fas fa-bars"></i> Menu
+    </a>
+
+    <div *ngIf="showMenu" class="dropdown-menu" class="showMenu">
+
+      <a routerLink="/profile" class="first">Profile</a>
+      <a routerLink="/grades">Grades</a>
+      <a routerLink="/login" class="last">Logout</a>
+    </div>
+  </nav>
+</header>
+
+<router-outlet/>

@@ -1,0 +1,30 @@
+<header>
+	<div class="logo">
+		<div class="imglogo"></div>
+		<div class="location">	
+		<h2>Bansud Institute INC. (BIC)</h2>	
+		<h5>Poblacion, Bansud, Oriental Mindoro</h5>
+		</div>
+
+	</div>
+	<div class="outside">	
+			<li (click)="toggleMenu()">	
+		<i class="fa fa-bars"></i>
+	</li>
+	</div>	
+	<nav [class.open] = "isMenuOpen" class="menu">
+		<li routerLink="/myprofile" routerLinkActive="active">
+          <i class="fa fa-user"></i>
+          <a >My Profile</a>
+        </li>
+		<li routerLink="/login" routerLinkActive="active">
+			<i class="fa fa-sign-out"></i>
+			<a>Login</a>
+		</li>
+		<li routerLink="/grades" routerLinkActive="active">
+			<i class="fas fa-graduation-cap"></i>
+			<a >Grades</a>
+		</li>
+
+	</nav>
+</header>

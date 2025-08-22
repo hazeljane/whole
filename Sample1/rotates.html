@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Jockey+One&display=swap');
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			background: #535050;
+		}
+		.box{
+			width: 62px;
+			height: 60px;
+			background: transparent;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.four{
+			transform:translate(0,25px) rotate(45deg);
+			background:black;
+			box-shadow:  -5px -5px 0 inset hotpink, 5px 5px 0 inset black,-10px -10px 0 inset black
+				,10px 10px 0 inset pink, 15px 15px 0 inset black, -15px -15px 0 inset black, 
+				20px 20px 0 inset white;
+		}
+		.container{
+			height: 170px;
+			width: 180px;
+			padding: 10px;
+			border-bottom: 3px solid hotpink;
+			border-top: 1px double black;
+			background: radial-gradient(gray, black);
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			border-radius: 50%;
+			box-shadow: 0 5px 1px inset hotpink, 5px 10px 1px inset deeppink,
+					-5px 10px 1px inset #C37B88;
+		}
+		h2{
+			margin-top: -100px;
+			font-family: "Jockey One", sans-serif;
+			font-size: 20px;
+			color: transparent;
+			background: linear-gradient(90deg, hotpink, white, violet, gray);
+			--webkit-background-clip: text;
+			background-clip: text;
+		}
+		h6{
+			font-family: Roboto;
+			color: wheat;
+			margin-top: 20px;
+			font-size: 20px;
+		}
+		.title{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>	
+<div class="container">
+	<div class="title">
+	<h6>ALL</h6>
+	<h2>BOX SHADOW</h2>		
+	</div>
+	<div class="box">
+		<div class="box two">
+			<div class="box three">
+				<div class="box four"></div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>
